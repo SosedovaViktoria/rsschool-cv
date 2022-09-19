@@ -1,7 +1,8 @@
 [rsschool-cv][1]
 ======
-**Viktoriia Goriachkina**
-======
+
+# **Viktoriia Goriachkina**
+
 <p align="center">
     <img src="./image.jpg" alt="victoria_goriachkina" width="195" height="220" />
 </p>
