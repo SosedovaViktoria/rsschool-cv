@@ -14,6 +14,19 @@
 * GitHub: [SosedovaViktoria][2]
 * Discord: Виктория (@SosedovaViktoria)
 
+## Briefly About Myself
+***
+I graduated from the technical university this year. I spent more time on QA at university, now I want to get more knowledge about the Front-end. I want to gain knowledge and skills that will be enough for employment in the company. I'm learning fast enough, I'm sociable.
+
+## Skills:
+***
+* HTML
+* CSS
+* JavaScript (Basic)
+* Git
+* Editors: VSCode, IntelliJ IDEA.
+
+
 
 
 [1]: http://b.org
