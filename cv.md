@@ -1,6 +1,3 @@
-[rsschool-cv][1]
-======
-
 # **Viktoriia Goriachkina**
 
 <p align="center">
