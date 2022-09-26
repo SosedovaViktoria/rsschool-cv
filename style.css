@@ -76,3 +76,10 @@ pre {
      margin-right: auto;
 }
 
+.git img {
+    width: 75px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+}
