@@ -43,7 +43,7 @@ nav ul {
 nav li {
   display: inline-block; 
 }
-a {
+header a {
     text-decoration: none;
     color: black;
 }
@@ -77,9 +77,17 @@ pre {
 }
 
 .git img {
-    width: 75px;
+    width: 100px;
 }
 footer {
     display: flex;
     justify-content: space-between;
+    background-color: rgba(255, 192, 203, 0.288);
+}
+.rs-school img {
+    width: 150px;
+}
+footer p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
