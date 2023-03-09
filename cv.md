@@ -6,10 +6,13 @@
 
 ## Contacts
 ***
-* Location: Georgia, Tbilisi
-* Email: nvikamail@mail.ru
-* GitHub: [SosedovaViktoria][2]
-* Discord: Viktoriia#0050
+> Location: Georgia, Tbilisi
+
+> Email: nvikamail@mail.ru
+
+> GitHub: [SosedovaViktoria][2]
+
+Discord: Viktoriia#0050
 
 ## Briefly About Myself
 ***
