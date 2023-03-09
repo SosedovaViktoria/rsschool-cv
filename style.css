@@ -1,0 +1,95 @@
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:rgb(22, 173, 190) ;
+    
+  }
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(rgb(22, 173, 190), 10%, rgba(255, 192, 203, 0.288));
+   
+  }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+nav {
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0;
+  position: static;
+  
+}
+nav ul {
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    gap: 12px;
+  
+}
+nav li {
+  display: inline-block; 
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+h1, h2, h3 {
+    text-align: left;
+    margin-left: 10px;
+}
+figure{
+font-weight: bold;
+text-align: center;
+}
+p {
+    margin-left: 40px;
+    margin-bottom: 0px;
+}
+.displayed {
+    text-align: center;
+}
+ol.circl {
+    list-style-type: circle;
+  }
+
+.code_exp {
+    margin-top: 0px;
+}
+pre {
+    margin: 0;
+    max-width: 900px;
+    margin-left: auto;
+     margin-right: auto;
+}
+.github_img {
+    width: 80px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 192, 203, 0.288);
+}
+.rs-school img {
+    width: 150px;
+}
+footer p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.rs-school_img {
+    padding-top: 0.5rem;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>CV</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="site-header">
+      <nav>
+        <ul class="nav_menu">
+          <li class="nav_item"><a class="nav_link" href="#Home">Home</a></li>
+          <li class="nav_item"><a class="nav_link" href="#Contacts">Contacts</a></li>
+          <li class="nav_item"><a class="nav_link" href="#AboutMe">AboutMe</a></li>
+          <li class="nav_item"><a class="nav_link" href="#Education">Education</a></li>
+          <li class="nav_item"><a class="nav_link" href="#Skills">Skills</a></li>
+          <li class="nav_item"><a class="nav_link" href="#Example">Example</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main">
+      <section id="Home" class="Home">
+        <h1>Viktoriia Goriachkina</h1>
+        <figure>
+          <img src="./image.jpg" alt="My photo" width="200" height="220">
+          <figcaption>RS School Student</figcaption>
+        </figure>
+      </section>
+      <section id="Contacts" class="Contacts">
+        <h2>Contacts</h2>
+        <ul>
+          <li>Location: Georgia, Tbilisi</li>
+          <li>Email: <a href="mailto:nvikamail@mail.com" target="_blank">nvikamail@mail.ru</a></li>
+          <li>GitHub: <a href="https://github.com/SosedovaViktoria/rsschool-cv">SosedovaViktoria</a></li>
+          <li>Discord: Виктория (@SosedovaViktoria)</li>
+        </ul>
+      </section>
+      <section id="AboutMe" class="AboutMe">
+        <h2>Briefly About Myself</h2>
+        <p>I graduated from the technical university in 2022. I spent more time on QA at university, now I want
+          to get more knowledge about the Front-end. I want to gain knowledge and skills that will be enough
+          for employment in the company. Also completed "JS / FRONT-END (RU)" courses at rs-School this year.
+        </p>
+      </section>
+      <section id="Education" class="Education">
+        <h2>Education</h2>
+        <ul>
+          <li>University: Bachelor, Saratov State University
+            <ol class="circl">
+              <li>Faculty of Computer Science</li>
+            </ol>
+          </li>
+          <li>Ru.code-basics
+            <ol class="circl">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li> JavaScript</li>
+            </ol>
+          </li>
+          <li>RS School
+            <ol class="circl">
+              <li>JavaScript/Front-end 2022Q3 (position: 639 / 1259)</li>
+            </ol>
+          </li>
+        </ul>
+      </section>
+      <section id="Skills" class="Skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Hard Skill
+            <ol>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>MSSQL</li>
+              <li>Git</li>
+              <li>Editors: VSCode, IntelliJ IDEA.</li>
+            </ol>
+          </li>
+          <li>Soft Skill
+            <ol>
+              <li>Desire to learn</li>
+              <li>Flexibility</li>
+              <li>Logical thinking</li>
+              <li>Friendliness</li>
+              <li>Interpersonal skills</li>
+            </ol>
+          </li>
+        </ul>
+        <h2>Language</h2>
+        <ul>
+          <li>Russian (Native)</li>
+          <li>English (B1)</li>
+        </ul>
+      </section>
+      <section id="Example" class="Example">
+        <h2>Examples</h2>
+        <h3>Task from CODEWARS:</h3>
+        <p>Define the following classes that inherit from Animal.
+
+          I. Shark
+          The constructor function for Shark should accept 3 arguments in total in the following order: name,
+          age, status. All sharks should have a leg count of 0 (since they obviously do not have any legs) and
+          should have a species of "shark".</p>
+          <p>II. Cat
+          The constructor function for Cat should accept the same 3 arguments as with Shark: name, age,
+          status. Cats should always have a leg count of 4 and a species of "cat".
+          Furthermore, the introduce/Introduce method for Cat should be identical to the original except there
+          should be exactly 2 spaces and the words "Meow meow!" after the phrase.</p>
+          <p>III. Dog
+          The Dog constructor should accept 4 arguments in the specified order: name, age, status, master.
+          master is the name of the dog's master which will be a string. Furthermore, dogs should have 4 legs
+          and a species of "dog".</p>
+          <p>Dogs have an identical introduce/Introduce method as any other animal, but they have their own
+          method called greetMaster/GreetMaster which accepts no arguments and returns "Hello
+          (insert_master_name_here)" (of course not the literal string but replace the
+          (insert_master_name_here) with the name of the dog's master).</p>
+        <div class="code_exp">
+          <pre>
+            <code class="lang-js">
+              class Shark extends Animal {
+                constructor(name, age, status) {
+                  super(name, age);
+                  this.legs = 0;
+                  this.species = "shark";
+                  this.status = status;
+                }
+              }
+              
+              class Cat extends Animal {
+                 constructor(name, age, status) {
+                  super(name, age);
+                  this.legs = 4;
+                  this.species = "cat"
+                  this.status = status;
+                }
+                introduce() {
+                  return `Hello, my name is ${this.name} and I am ${this.age} years old.  Meow meow!`;
+                }
+              }
+              
+              class Dog extends Animal {
+                 constructor(name, age, status, master ) {
+                  super(name, age);
+                  this.legs = 4;
+                  this.species = "dog"
+                  this.status = status;
+                  this.master = master;
+                }
+                introduce() {
+                  return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+                }
+                greetMaster() {
+                  return `Hello ${this.master}`;
+                }
+              }
+            </code>
+          </pre>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="git">
+        <a class="Github" href="https://github.com/SosedovaViktoria/rsschool-cv" target="_blank">
+          <img class="github_img" src="./github-mark.svg" alt="GitHub" width="10px">
+        </a>
+      </div>
+      <p>2023</p>
+      <div class="rs-school">
+        <a class="rs" href="https://rs.school/" target="_blank">
+          <img class="rs-school_img" src="./rs_school_js.svg" alt="RS-School">
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
