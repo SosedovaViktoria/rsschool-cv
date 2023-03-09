@@ -5,12 +5,10 @@
   background: rgb(22, 173, 190);
 
 }
-
 .myFace_img {
   width: 200px;
   height: 220px;
 }
-
 .container {
   width: 100%;
   max-width: 100%;
@@ -18,13 +16,11 @@
   background: linear-gradient(rgb(22, 173, 190), 10%, rgba(255, 192, 203, 0.288));
 
 }
-
 .container:after {
   content: "";
   display: table;
   clear: both;
 }
-
 nav {
   float: right;
   display: flex;
@@ -34,7 +30,6 @@ nav {
   position: static;
 
 }
-
 nav ul {
   list-style: none;
   position: absolute;
@@ -48,71 +43,57 @@ nav ul {
   gap: 12px;
 
 }
-
 nav li {
   display: inline-block;
 }
-
 header a {
   text-decoration: none;
   color: black;
 }
-
 h1,
 h2,
 h3 {
   text-align: left;
   margin-left: 10px;
 }
-
 figure {
   font-weight: bold;
   text-align: center;
 }
-
 p {
   margin-left: 40px;
   margin-bottom: 0px;
 }
-
 .displayed {
   text-align: center;
 }
-
 ol.circl {
   list-style-type: circle;
 }
-
 .code_exp {
   margin-top: 0px;
 }
-
 pre {
   margin: 0;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
-
 .github_img {
   width: 80px;
 }
-
 footer {
   display: flex;
   justify-content: space-between;
   background-color: rgba(255, 192, 203, 0.288);
 }
-
 .rs-school img {
   width: 150px;
 }
-
 footer p {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
 }
-
 .rs-school_img {
   padding-top: 0.5rem;
 }
