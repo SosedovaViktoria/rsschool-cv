@@ -87,7 +87,7 @@ class Dog extends Animal {
   }
 }
 ```
-*** 
+***
 
 Education
 ===
