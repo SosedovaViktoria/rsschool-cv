@@ -5,16 +5,26 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
   <title>CV Goriachkina Viktoriia</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
 </head>
 
 <body>
   <div class="mainContent">
     <div class="summary">
-      <img id="myFaceImg" src="./image.jpg" alt="My photo">
+      <div class="header">
+        <img id="myFaceImg" src="./image.jpg" alt="My photo">
+        <select id="changeLang">
+          <option value="en" selected>En</option>
+          <option value="ru">Ru</option>
+        </select>
+      </div>
       <section id="Contacts" class="Contacts">
-        <h2 class="sabheader">Contacts</h2>
+        <h2 class="sabheader contact">Contacts</h2>
         <ul>
-          <li>Location: Georgia, Tbilisi</li>
+          <li class="local">Location: Georgia, Tbilisi</li>
           <li>Email: <a href="mailto:nvikamail@mail.com" target="_blank">nvikamail@mail.ru</a></li>
           <li>GitHub: <a href="https://github.com/SosedovaViktoria/rsschool-cv">SosedovaViktoria</a></li>
           <li>Discord: <a href="https://discordapp.com/users/527937020417540099/"> Виктория (@SosedovaViktoria) </a>
@@ -22,16 +32,16 @@
         </ul>
       </section>
       <section id="Language">
-        <h2 class="sabheader">Language</h2>
+        <h2 class="sabheader language">Language</h2>
         <ul id="listLanguage">
-          <li>Russian:</li>
-          <li>&#9899;&#9899;&#9899;&#9899;&#9899; &#8195; C2 - Native </li>
-          <li>English:</li>
-          <li>&#9899;&#9899;&#9898;&#9898;&#9898; &#8195; B1 - Intermediate</li>
+          <li class="rus">Russian:</li>
+          <li class="rus-level">&#9899;&#9899;&#9899;&#9899;&#9899; &#8195; C2 - Native </li>
+          <li class="eng">English:</li>
+          <li class="eng-level">&#9899;&#9899;&#9898;&#9898;&#9898; &#8195; B1 - Intermediate</li>
         </ul>
       </section>
       <section id="Skills">
-        <h2 class="sabheader">Skills</h2>
+        <h2 class="sabheader skill">Skills</h2>
         <ul id="skill">
           <li>HTML5, CSS</li>
           <li>JavaScript</li>
@@ -39,15 +49,14 @@
           <li>Git</li>
           <li>Webpack</li>
           <li>SCSS</li>
-          <li>Responsive web design</li>
-          <li>work with json</li>
+          <li class="design">Responsive web design</li>
+          <li class="json">Work with json</li>
         </ul>
       </section>
     </div>
     <div class="detailedInformation">
-      <h1 class="indent">Goriachkina Viktoriia</h1>
-      <h2 class="indent">Junior Front-end Developer</h2>
-      <!-- <p> &#9432; : 23 years</p> -->
+      <h1 class="indent name">Goriachkina Viktoriia</h1>
+      <h2 class="indent career">Junior Front-end Developer</h2>
       <div class="blockForHeading indent">
         <h3 class="titleEducation"> Education:</h3>
         <div class="blockForImg">
@@ -56,7 +65,7 @@
       </div>
       <div class="dridInfo">
         <p>2022</p>
-        <p> Bachelor - Saratov State University. <br>
+        <p class="education"> Bachelor - Saratov State University. <br>
           Faculty of Computer Science.
         </p>
       </div>
@@ -70,7 +79,7 @@
         <p>2022</p>
         <p> Ru.code-basics: HTML, CSS, JavaScript</p>
         <p>2022</p>
-        <p> RS School: JavaScript/Front-end 2022Q3 (position: 639 / 1259)</p>
+        <p class="rs-school"> RS School: JavaScript/Front-end 2022Q3 (position: 639 / 1259)</p>
       </div>
       <div class="blockForHeading v1 indent">
         <h3 class="titleBriefly">Briefly About Myself</h3>
@@ -78,10 +87,9 @@
           <img src="./AboutMe.png" alt="AboutMe" class="imgAboutMe">
         </div>
       </div>
-      <p class="paragraph">I graduated from the technical university in 2022. I spent more time on QA at university, now
-        I want to get
-        more knowledge about the Front-end. I want to gain knowledge and skills that will be enough for employment in
-        the company. Also completed "JS / FRONT-END (RU)" courses at rs-School this year.
+      <p class="paragraph aboutMe">I graduated from the technical university in 2022. I studied a lot of testing at university, and after graduation I started studying Front-end.
+        I have experience with HTML coding and with Figma at RS School courses.
+         Also completed "JS / FRONT-END (RU)" courses at rs-School this year.
       </p>
       <div class="blockForHeading v2 indent">
         <h3 class="titleExamples"> Example task:</h3>
@@ -90,24 +98,24 @@
         </div>
       </div>
       <div class="paragraph">
-        <h4>Task from CODEWARS:</h4>
-        <p>Define the following classes that inherit from Animal.</p>
-        <p>I. Shark. The constructor function for Shark should accept 3 arguments in total in the following order: name,
+        <h4 class="titleTask">Task from CODEWARS:</h4>
+        <p class="p1">Define the following classes that inherit from Animal.</p>
+        <p class="p2">I. Shark. The constructor function for Shark should accept 3 arguments in total in the following order: name,
           age, status. All sharks should have a leg count of 0 (since they obviously do not have any legs) and should
           have a species of "shark".</p>
-        <p>II. Cat. The constructor function for Cat should accept the same 3 arguments as with Shark: name, age,
+        <p class="p3">II. Cat. The constructor function for Cat should accept the same 3 arguments as with Shark: name, age,
           status. Cats should always have a leg count of 4 and a species of "cat". Furthermore, the introduce/Introduce
           method for Cat should be identical to the original except there should be exactly 2 spaces and the words "Meow
           meow!" after the phrase.</p>
-        <p>III. Dog. The Dog constructor should accept 4 arguments in the specified order: name, age, status, master.
+        <p class="p4">III. Dog. The Dog constructor should accept 4 arguments in the specified order: name, age, status, master.
           Master is the name of the dog's master which will be a string. Furthermore, dogs should have 4 legs and a
           species of "dog".</p>
-        <p>Dogs have an identical introduce/Introduce method as any other animal, but they have their own method called
+        <p class="p5">Dogs have an identical introduce method as any other animal, but they have their own method called
           greetMaster/GreetMaster which accepts no arguments and returns "Hello (insert_master_name_here)" (of course
           not the literal string but replace the (insert_master_name_here) with the name of the dog's master).</p>
       </div>
       <div class="code_exp">
-        <h5 class="paragraph">Code:</h5>
+        <h5 class="paragraph code">Code:</h5>
         <pre>
           <code class="lang-js">
             class Shark extends Animal {
@@ -149,6 +157,7 @@
       </div>
     </div>
   </div>
+  <script src="./script.js"></script>
 </body>
 
 </html>

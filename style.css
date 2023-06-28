@@ -17,7 +17,14 @@ a {
     display: flex;
     flex-direction: column;
 }
-
+.header {
+    display: flex;
+    align-items: flex-start;
+}
+#changeLang {
+    margin-top: 20px;
+    margin-left: 10px;
+}
 .sabheader {
     background-color: rgb(17 152 167);
 }
