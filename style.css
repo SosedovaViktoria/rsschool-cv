@@ -12,25 +12,48 @@ a {
 
 .summary {
     width: 30%;
-    /* padding: 5%; */
     background-color: rgb(44 178 194);
     display: flex;
     flex-direction: column;
 }
-.header {
+
+.nameHeader {
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+option::selected {
+    display: none;
+}
+
 #changeLang {
+    width: 32px;
+    height: 32px;
+    background-image: url(./planet-earth.png);
+    border-radius: 20px;
     margin-top: 20px;
     margin-left: 10px;
 }
+
 .sabheader {
+    padding-left: 3%;
     background-color: rgb(17 152 167);
 }
 
 #myFaceImg {
-    margin-left: 25%;
+    margin-left: 23%;
+    margin-right: 23%;
     width: 55%;
     border-radius: 10%;
 }
