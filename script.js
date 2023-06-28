@@ -98,7 +98,7 @@ const langChange = {
   },
   "p4": {
     "en": "III. Dog. The Dog constructor should accept 4 arguments in the specified order: name, age, status, master. Master is the name of the dog's master which will be a string. Furthermore, dogs should have 4 legs and a species of 'dog'.",
-    "ru": "III. Dog. Конструктор Dog должен принимать 4 аргумента в указанном порядке: имя, возраст, статус, хозяин. Хозяин — это имя хозяина собаки, которое будет строкой. Кроме того, у собаки должно быть 4 ноги и порода собаки."
+    "ru": "III. Dog. Конструктор Dog должен принимать 4 аргумента в указанном порядке: имя, возраст, статус, master. Master — это имя хозяина собаки, которое будет строкой. Кроме того, у собаки должно быть 4 ноги и порода собаки."
   },
   "p5": {
     "en": "Dogs have an identical introduce method as any other animal, but they have their own method called greetMaster/GreetMaster which accepts no arguments and returns 'Hello (insert_master_name_here)' (of course not the literal string but replace the (insert_master_name_here) with the name of the dog's master).",
@@ -109,13 +109,18 @@ const langChange = {
     "ru": "Код:"
   },
 }
-const selectLang = document.querySelector('select');
+
 const allLang = ['en', 'ru'];
+
+const selectLang = document.querySelector('select');
 selectLang.addEventListener('change', changeUrlLanguage);
 
 function changeUrlLanguage() {
   let lang = selectLang.value;
   window.location.href = `${window.location.pathname}#${lang}`;
+
+  document.getElementById("changeLang").selectedIndex = -1;
+
   window.location.reload();
 }
 
@@ -129,7 +134,7 @@ function changeLang() {
     return;
   }
 
-  selectLang.value = hash;
+  // selectLang.value = hash;
   document.title = `${langChange['tittle'][hash]}`;
 
   for (let key in langChange) {
@@ -145,6 +150,6 @@ function changeLang() {
 
     }
   }
-
 }
+
 changeLang();

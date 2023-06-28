@@ -14,13 +14,14 @@
 <body>
   <div class="mainContent">
     <div class="summary">
-      <div class="header">
-        <img id="myFaceImg" src="./image.jpg" alt="My photo">
+      <img id="myFaceImg" src="./image.jpg" alt="My photo">
+      <!-- <div class="header">
+
         <select id="changeLang">
           <option value="en" selected>En</option>
           <option value="ru">Ru</option>
         </select>
-      </div>
+      </div> -->
       <section id="Contacts" class="Contacts">
         <h2 class="sabheader contact">Contacts</h2>
         <ul>
@@ -55,7 +56,14 @@
       </section>
     </div>
     <div class="detailedInformation">
-      <h1 class="indent name">Goriachkina Viktoriia</h1>
+      <div class="nameHeader">
+        <h1 class="indent name">Goriachkina Viktoriia</h1>
+        <select id="changeLang">
+          <option style="display:none" disabled selected value></option>
+          <option value="en">En</option>
+          <option value="ru">Ru</option>
+        </select>
+      </div>
       <h2 class="indent career">Junior Front-end Developer</h2>
       <div class="blockForHeading indent">
         <h3 class="titleEducation"> Education:</h3>
