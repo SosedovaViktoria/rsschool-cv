@@ -29,8 +29,8 @@ const langChange = {
     "ru": "Английский:"
   },
   "eng-level": {
-    "en": "⚫⚫⚪⚪⚪ B1 - Intermediate",
-    "ru": "⚫⚫⚪⚪⚪ B1 - Средний"
+    "en": "⚫⚫⚪⚪⚪ A2+ - Pre-Intermediate",
+    "ru": "⚫⚫⚪⚪⚪ A2+ - Pre-Intermediate"
   },
   "skill": {
     "en": "Skills",
